@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -15,11 +17,28 @@
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxIqKQY_Xq-TC-VLFKj5jgyGkaw1ChT9arLfhtZo4yE4MzKV-Ip-ujKdMXfS7vLF_dJns&usqp=CAU");
+  background-color: #000;
+  font-family: Rubik, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
 }
-
+body::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: #000;
+  opacity: 0.7;
+  z-index: -1;
+}
+#nprogress .bar {
+  background: transparent !important;
+  background-color: transparent !important;
+}
 @layer utilities {
   .text-balance {
     text-wrap: balance;

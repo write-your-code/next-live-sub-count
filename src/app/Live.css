@@ -1,0 +1,154 @@
+.box {
+  /* width: 60vmin; */
+  /* height: 50vmin; */
+  /* display: grid; */
+  padding: 5px;
+  place-content: center;
+  color: white;
+  text-shadow: 0 1px 0 #000;
+  --border-angle: 0turn;
+  --main-bg: conic-gradient(
+    from var(--border-angle),
+    #213,
+    rgb(177, 30, 30) 5%,
+    #112 60%,
+    #213 95%
+  );
+  border: solid 5px transparent;
+  border-radius: 1em;
+  --gradient-border: conic-gradient(
+    from var(--border-angle),
+    /* transparent 25%, */ rgb(226, 216, 12),
+    rgb(255, 255, 255) 70%,
+    rgb(226, 216, 12),
+    rgb(254, 253, 253) 70%,
+    transparent
+  );
+  background: var(--main-bg) padding-box, var(--gradient-border) border-box,
+    var(--main-bg) border-box;
+  background-position: center center;
+  -webkit-animation: bg-spin 32s linear infinite;
+  animation: bg-spin 32s linear infinite;
+}
+.box-1 {
+  /* width: 60vmin; */
+  /* height: 50vmin; */
+  /* display: grid; */
+  padding: 5px;
+  place-content: center;
+  color: white;
+  text-shadow: 0 1px 0 #000;
+  --border-angle: 0turn;
+  --main-bg: conic-gradient(
+    from var(--border-angle),
+    #213,
+    rgb(24, 24, 236) 5%,
+    #112 60%,
+    #213 95%
+  );
+  border: solid 5px transparent;
+  border-radius: 1em;
+  --gradient-border: conic-gradient(
+    from var(--border-angle),
+    /* transparent 25%, */ #f03 70%,
+    #08f,
+    #f03 70%,
+    #08f,
+    transparent
+  );
+  background: var(--main-bg) padding-box, var(--gradient-border) border-box,
+    var(--main-bg) border-box;
+  background-position: center center;
+  -webkit-animation: bg-spin 32s linear infinite;
+  animation: bg-spin 32s linear infinite;
+}
+.box-2 {
+  /* width: 60vmin; */
+  /* height: 50vmin; */
+  /* display: grid; */
+  padding: 5px;
+  place-content: center;
+  color: white;
+  text-shadow: 0 1px 0 #000;
+  --border-angle: 0turn;
+  --main-bg: conic-gradient(
+    from var(--border-angle),
+    rgb(255, 255, 255),
+    rgb(255, 255, 255) 5%,
+    rgb(255, 255, 255) 60%,
+    rgb(255, 255, 255) 95%
+  );
+  border: solid 5px transparent;
+  border-radius: 1em;
+  --gradient-border: conic-gradient(
+    from var(--border-angle),
+    /* transparent 25%, */ rgb(154, 174, 26) 70%,
+    rgb(181, 159, 255),
+    rgb(237, 16, 60) 70%,
+    rgb(231, 161, 10),
+    transparent
+  );
+  background: var(--main-bg) padding-box, var(--gradient-border) border-box,
+    var(--main-bg) border-box;
+  background-position: center center;
+  -webkit-animation: bg-spin 32s linear infinite;
+  animation: bg-spin 32s linear infinite;
+}
+.box-3 {
+  /* width: 60vmin; */
+  /* height: 50vmin; */
+  /* display: grid; */
+  padding: 5px;
+  place-content: center;
+  color: white;
+  text-shadow: 0 1px 0 #000;
+  --border-angle: 0turn;
+  --main-bg: conic-gradient(
+    from var(--border-angle),
+    rgb(255, 255, 255),
+    rgb(255, 255, 255) 5%,
+    rgb(255, 255, 255) 60%,
+    rgb(255, 255, 255) 95%
+  );
+  border: solid 5px transparent;
+  /* border-radius: 1em; */
+  --gradient-border: conic-gradient(
+    from var(--border-angle),
+    /* transparent 25%, */ rgb(26, 185, 26) 70%,
+    rgb(20, 33, 45),
+    rgb(32, 27, 42) 70%,
+    rgb(96, 204, 18),
+    transparent
+  );
+  background: var(--main-bg) padding-box, var(--gradient-border) border-box,
+    var(--main-bg) border-box;
+  background-position: center center;
+  -webkit-animation: bg-spin 32s linear infinite;
+  animation: bg-spin 32s linear infinite;
+}
+@-webkit-keyframes bg-spin {
+  to {
+    --border-angle: 1turn;
+  }
+}
+@keyframes bg-spin {
+  to {
+    --border-angle: 1turn;
+  }
+}
+.box:hover {
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused;
+}
+
+@property --border-angle {
+  syntax: "<angle>";
+  inherits: true;
+  initial-value: 0turn;
+}
+.odoParrent {
+  color: blue !important;
+}
+.compareId_difference___0pxf {
+  color: blue !important;
+}

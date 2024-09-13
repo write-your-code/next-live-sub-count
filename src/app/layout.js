@@ -20,11 +20,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
-      </body>
+      <head>
+        <link rel="stylesheet" href="odometer-theme-car.css" />
+      </head>
+      <body className={`antialiased`}>{children}</body>
     </html>
   );
 }

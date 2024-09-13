@@ -1,5 +1,5 @@
 import Image from "next/image";
-
+import RonaldovsBeast from "./components/RonaldovsBeast";
 export default function Home() {
-  return <div className="container">{layout === 5 && <RonaldovsBeast />}</div>;
+  return <RonaldovsBeast />;
 }

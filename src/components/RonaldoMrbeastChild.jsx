@@ -6,7 +6,7 @@ import React, { useState, useEffect, useRef } from "react";
 // import "../app/Live.css";
 import axios from "axios";
 import Odometer from "react-odometerjs";
-import "odometer/themes/odometer-theme-default.css";
+// import "odometer/themes/odometer-theme-default.css";
 import {
   ArrowUpRightIcon,
   EyeIcon,
@@ -91,7 +91,7 @@ const LiveSubCountAll = ({
     fetchChannelDetails();
   }, []);
 
-  if (1) {
+  // if (1) {
     return (
       <div className={`mb-[5px]  mr-[2px] shadow-xl w-full`} key={channelId}>
         <div
@@ -164,7 +164,7 @@ const LiveSubCountAll = ({
         </div>
       </div>
     );
-  }
+  // }
   //   return (
   //     <div className="mb-[3px] w-[280px] h-[auto] relative">
   //       <div className="flex mr-1 px-1 py-[1px] text-xl items-center gap-2 isolate rounded-xl bg-white text-black shadow-lg ring-1 ring-black/5">

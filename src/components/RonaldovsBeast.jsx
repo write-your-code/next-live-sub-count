@@ -13,17 +13,17 @@ const LiveCount = () => {
     "UC3gNmTGu-TTbFPpfSs5kNkg",
     "UCRijo3ddMTht_IHyNSNXpNQ",
   ];
-  const [channelDetails, setChannelDetails] = useState({
-    subscriberCount: null,
-    channelName: "",
-    profilePicture: "",
-  });
+  // const [channelDetails, setChannelDetails] = useState({
+  //   subscriberCount: null,
+  //   channelName: "",
+  //   profilePicture: "",
+  // });
 
-  const [beastDetails, setBeastDetails] = useState({
-    subscriberCount: null,
-    channelName: "",
-    profilePicture: "",
-  });
+  // const [beastDetails, setBeastDetails] = useState({
+  //   subscriberCount: null,
+  //   channelName: "",
+  //   profilePicture: "",
+  // });
 
   return (
     <div className="text-xl flex width-[100%] px-0">
@@ -88,6 +88,7 @@ const LiveCount = () => {
             <LiveCounter channelId={c} key={c} />
           ))}
         </div>
+
         <div className="absolute top-[260px] w-[125px] h-[80px] overflow-hidden text-2xl rounded box-3">
           <iframe
             height="90px"

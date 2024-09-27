@@ -1,10 +1,5 @@
-// import LiveSubCountAll from "@/Components/RonaldoMrbeastChild";
-import LiveCount from "../Components/RonaldoVsBeast";
-// import MainRonaldo from "@/Components/RonaldoVsBeast";
+import RonaldoVsBeast from "@/Components/RonaldoVsBeast.jsx";
+
 export default function Home() {
-  return (
-    <>
-      <LiveCount />
-    </>
-  );
+  return <RonaldoVsBeast />;
 }

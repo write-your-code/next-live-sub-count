@@ -23,7 +23,7 @@ export default function RootLayout({ children }) {
       <head>
         {/* <link rel="stylesheet" href="odometer-theme-car.css" /> */}
       </head>
-      <body className={`antialiased`}>{children}</body>
+      <body>{children}</body>
     </html>
   );
 }

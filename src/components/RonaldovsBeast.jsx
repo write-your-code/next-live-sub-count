@@ -1,11 +1,14 @@
 "use client";
-import React, { useState, useEffect } from "react";
+
+import RonaldoMrBeastChild from "./RonaldoMrBeastChild";
+
+// import RonaldoMrBeastChild from "./RonaldoMrBeastChild";
 // import Counter from "./Counter";
-import LiveCounter from "./RonaldoMrbeastChild";
+// import LiveCounter from "./RonaldoMrBeastChild";
 // import LiveSubCountTop50 from "./LiveSubCountTop50";
 // import LiveSubCountAll3D from "./LiveSubCountNextCount3D";
 // import "../app/Live.css";
-const LiveCount = () => {
+export const RonaldoVsBeast = () => {
   const data = ["UCX6OQ3DkcsbYNE6H8uQQuVA", "UCtxD0x6AuNNqdXO9Wp5GHew"];
   const dataSecond = [
     "UC56gTxNs4f9xZ7Pa2i5xNzg",
@@ -85,7 +88,7 @@ const LiveCount = () => {
       <div className="flex flex-col items-center justify-start w-3/5 gap-1 ">
         <div className="flex items-start justify-between gap-32 p-2">
           {data.map((c) => (
-            <LiveCounter channelId={c} key={c} />
+            <RonaldoMrBeastChild channelId={c} key={c} />
           ))}
         </div>
 
@@ -189,4 +192,4 @@ const LiveCount = () => {
   );
 };
 
-export default LiveCount;
+export default RonaldoVsBeast;

@@ -42,9 +42,9 @@ export default function Counter() {
   //   }, 1000);
   // };
 
-  useEffect(() => {
-    // countdownTimer();
-  },[]);
+  // useEffect(() => {
+  //   // countdownTimer();
+  // },[]);
   return (
     <div className="px-2 py-1 bg-white flex justify-center items-center relative box-3">
       {/* <img src="/clock.gif" alt="" className="w-6 absolute" /> */}

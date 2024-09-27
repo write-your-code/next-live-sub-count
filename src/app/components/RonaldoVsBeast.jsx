@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect } from "react";
 import RonaldoMrBeastChild from "./RonaldoMrBeastChild";
 
 // import RonaldoMrBeastChild from "./RonaldoMrBeastChild";
@@ -9,6 +10,7 @@ import RonaldoMrBeastChild from "./RonaldoMrBeastChild";
 // import LiveSubCountAll3D from "./LiveSubCountNextCount3D";
 // import "../app/Live.css";
 export const RonaldoVsBeast = () => {
+  const [hydrated, setHydrated] = useState(false);
   const data = ["UCX6OQ3DkcsbYNE6H8uQQuVA", "UCtxD0x6AuNNqdXO9Wp5GHew"];
   const dataSecond = [
     "UC56gTxNs4f9xZ7Pa2i5xNzg",
@@ -27,7 +29,9 @@ export const RonaldoVsBeast = () => {
   //   channelName: "",
   //   profilePicture: "",
   // });
-
+  useEffect(() => {
+    setHydrated(true); // Set hydrated state to true
+  }, []);
   return (
     <div className="text-xl flex width-[100%] px-0">
       <div className="w-1/5 overflow-hidden">

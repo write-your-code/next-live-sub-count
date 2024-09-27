@@ -16,6 +16,7 @@ const RonaldoMrBeastChild = ({ channelId, index }) => {
   const [data, setData] = useState({});
   const [value, setValue] = useState(0);
   const [views, setViews] = useState(0);
+  const [hydrated, setHydrated] = useState(false);
 
   const [diffSub, setDiffSub] = useState(0);
   // for border animation
@@ -77,10 +78,11 @@ const RonaldoMrBeastChild = ({ channelId, index }) => {
     return () => {
       clearInterval(intervalId);
     }; // Clean up on unmount
-  }, []);
+  }, [fatchStats]);
 
   useEffect(() => {
     fetchChannelDetails();
+    setHydrated(true); // Set hydrated state to true
   }, []);
 
   // if (1) {

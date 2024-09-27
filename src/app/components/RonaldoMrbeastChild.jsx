@@ -93,7 +93,7 @@ const LiveSubCountAll = ({
 
   if (1) {
     return (
-      <div className={`mb-[5px]  mr-[2px] shadow-xl w-full`}>
+      <div className={`mb-[5px]  mr-[2px] shadow-xl w-full`} key={channelId}>
         <div
           className={`flex flex-col  bg-gradient-to-b from-orange-400 rounded-lg to-red-500 dark:from-orange-400:to-red-500 px-2 py-[1px] text-2xl items-center h-[450px] ${
             channelId === "UCtxD0x6AuNNqdXO9Wp5GHew" ? "box" : "box-1"

@@ -15,7 +15,7 @@
     #213 95%
   );
   border: solid 5px transparent;
-  border-radius: 1em;
+  /* border-radius: 1em; */
   --gradient-border: conic-gradient(
     from var(--border-angle),
     /* transparent 25%, */ rgb(226, 216, 12),
@@ -47,7 +47,7 @@
     #213 95%
   );
   border: solid 5px transparent;
-  border-radius: 1em;
+  /* border-radius: 1em; */
   --gradient-border: conic-gradient(
     from var(--border-angle),
     /* transparent 25%, */ #f03 70%,
@@ -79,13 +79,13 @@
     rgb(255, 255, 255) 95%
   );
   border: solid 5px transparent;
-  border-radius: 1em;
+  /* border-radius: 1em; */
   --gradient-border: conic-gradient(
     from var(--border-angle),
-    /* transparent 25%, */ rgb(154, 174, 26) 70%,
-    rgb(181, 159, 255),
-    rgb(237, 16, 60) 70%,
-    rgb(231, 161, 10),
+    /* transparent 25%, */ rgb(79, 21, 250) 70%,
+    rgb(235, 15, 15),
+    rgb(79, 16, 237) 70%,
+    rgb(227, 6, 6),
     transparent
   );
   background: var(--main-bg) padding-box, var(--gradient-border) border-box,

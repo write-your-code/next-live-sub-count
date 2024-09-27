@@ -87,10 +87,10 @@ const LiveCount = () => {
       <div className="flex flex-col items-center justify-start w-3/5 gap-1 ">
         <div className="flex items-start justify-between gap-32 p-2">
           {data.map((c) => (
-            <LiveCounter channelId={c} />
+            <LiveCounter channelId={c} key={c}/>
           ))}
         </div>
-        <div className="absolute top-[360px] w-[125px] h-[80px] overflow-hidden text-2xl rounded box-3">
+        <div className="absolute top-[260px] w-[125px] h-[80px] overflow-hidden text-2xl rounded box-3">
           <iframe
             height="90px"
             width="300px"

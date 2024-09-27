@@ -1,13 +1,7 @@
 "use client";
 
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import RonaldoMrBeastChild from "./RonaldoMrBeastChild";
-
-// import RonaldoMrBeastChild from "./RonaldoMrBeastChild";
-// import Counter from "./Counter";
-// import LiveCounter from "./RonaldoMrBeastChild";
-// import LiveSubCountTop50 from "./LiveSubCountTop50";
-// import LiveSubCountAll3D from "./LiveSubCountNextCount3D";
 // import "../app/Live.css";
 export const RonaldoVsBeast = () => {
   const [hydrated, setHydrated] = useState(false);
@@ -91,8 +85,8 @@ export const RonaldoVsBeast = () => {
       {/* middle column */}
       <div className="flex flex-col items-center justify-start w-3/5 gap-1 ">
         <div className="flex items-start justify-between gap-32 p-2">
-          {data.map((c) => (
-            <RonaldoMrBeastChild channelId={c} key={c} />
+          {data.map((c, i) => (
+            <RonaldoMrBeastChild channelId={c} key={c} index={i + 1} />
           ))}
         </div>
 
@@ -193,6 +187,7 @@ export const RonaldoVsBeast = () => {
         </div>
       </div>
     </div>
+    // <p>hi</p>
   );
 };
 

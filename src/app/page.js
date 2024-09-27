@@ -1,4 +1,4 @@
-import RonaldoVsBeast from "./components/RonaldoVsBeast";
+import RonaldoVsBeast from "../components/RonaldoVsBeast";
 
 export default function Home() {
   return <RonaldoVsBeast />;

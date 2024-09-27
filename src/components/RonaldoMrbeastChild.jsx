@@ -3,7 +3,7 @@
 import React, { useState, useEffect, useRef } from "react";
 // import { getChannelDetailsB } from "../api/youtube-beast";
 // import { ArrowUpRightIcon } from "@heroicons/react/20/solid";
-import "@/app/Live.css";
+import "../app/Live.css";
 import axios from "axios";
 import Odometer from "react-odometerjs";
 import "odometer/themes/odometer-theme-default.css";

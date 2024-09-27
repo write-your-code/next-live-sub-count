@@ -1,6 +1,7 @@
+"use client";
 import { useEffect, useState } from "react";
 // import Countdown from "react-countdown";
-import "@/app/Live.css";
+// import "@/app/Live.css";
 
 export default function Counter() {
   const [expiryTime, setExpiryTime] = useState("21 august 2024 18:00:00");

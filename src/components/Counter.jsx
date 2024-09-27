@@ -12,39 +12,39 @@ export default function Counter() {
     countdownSeconds: "",
   });
 
-  const countdownTimer = () => {
-    const timeInterval = setInterval(() => {
-      const countdownDateTime = new Date(expiryTime).getTime();
-      const currentTime = new Date().getTime();
-      const remainingDayTime = currentTime - countdownDateTime;
-      const totalDays = Math.floor(remainingDayTime / (1000 * 60 * 60 * 24));
-      const totalHours = Math.floor(
-        (remainingDayTime % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-      );
-      const totalMinutes = Math.floor(
-        (remainingDayTime % (1000 * 60 * 60)) / (1000 * 60)
-      );
-      const totalSeconds = Math.floor((remainingDayTime % (1000 * 60)) / 1000);
+  // const countdownTimer = () => {
+  //   const timeInterval = setInterval(() => {
+  //     const countdownDateTime = new Date(expiryTime).getTime();
+  //     const currentTime = new Date().getTime();
+  //     const remainingDayTime = currentTime - countdownDateTime;
+  //     const totalDays = Math.floor(remainingDayTime / (1000 * 60 * 60 * 24));
+  //     const totalHours = Math.floor(
+  //       (remainingDayTime % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+  //     );
+  //     const totalMinutes = Math.floor(
+  //       (remainingDayTime % (1000 * 60 * 60)) / (1000 * 60)
+  //     );
+  //     const totalSeconds = Math.floor((remainingDayTime % (1000 * 60)) / 1000);
 
-      const runningCountdownTime = {
-        countdownDays: totalDays,
-        countdownHours: totalHours,
-        countdownMinutes: totalMinutes,
-        countdownSeconds: totalSeconds,
-      };
+  //     const runningCountdownTime = {
+  //       countdownDays: totalDays,
+  //       countdownHours: totalHours,
+  //       countdownMinutes: totalMinutes,
+  //       countdownSeconds: totalSeconds,
+  //     };
 
-      setCountdownTime(runningCountdownTime);
+  //     setCountdownTime(runningCountdownTime);
 
-      if (remainingDayTime < 0) {
-        clearInterval(timeInterval);
-        setExpiryTime(false);
-      }
-    }, 1000);
-  };
+  //     if (remainingDayTime < 0) {
+  //       clearInterval(timeInterval);
+  //       setExpiryTime(false);
+  //     }
+  //   }, 1000);
+  // };
 
   useEffect(() => {
-    countdownTimer();
-  });
+    // countdownTimer();
+  },[]);
   return (
     <div className="px-2 py-1 bg-white flex justify-center items-center relative box-3">
       {/* <img src="/clock.gif" alt="" className="w-6 absolute" /> */}

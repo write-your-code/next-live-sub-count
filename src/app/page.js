@@ -1,5 +1,8 @@
-import Image from "next/image";
-import RonaldovsBeast from "../components/RonaldovsBeast";
+import MainRonaldo from "../Components/RonaldoVsBeast";
 export default function Home() {
-  return <RonaldovsBeast />;
+  return (
+    <>
+      <MainRonaldo />
+    </>
+  );
 }

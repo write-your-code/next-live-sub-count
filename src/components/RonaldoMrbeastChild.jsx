@@ -3,7 +3,7 @@
 import React, { useState, useEffect, useRef } from "react";
 // import { getChannelDetailsB } from "../api/youtube-beast";
 // import { ArrowUpRightIcon } from "@heroicons/react/20/solid";
-import "../app/Live.css";
+// import "../app/Live.css";
 import axios from "axios";
 import Odometer from "react-odometerjs";
 import "odometer/themes/odometer-theme-default.css";
@@ -27,7 +27,7 @@ const LiveSubCountAll = ({
 
   const [diffSub, setDiffSub] = useState(0);
   // for border animation
-  const boxRef = useRef(null);
+  // const boxRef = useRef(null);
 
   const fetchStats = async () => {
     try {
@@ -80,7 +80,7 @@ const LiveSubCountAll = ({
     }
   };
   useEffect(() => {
-    const intervalId = setInterval(fetchStats, 100); // Fetch every 3 seconds
+    const intervalId = setInterval(fetchStats, 1000); // Fetch every 3 seconds
     // const timeoutId = setTimeout(() => setValue(data.subcount), 300);
     return () => {
       clearInterval(intervalId);
